@@ -6,6 +6,8 @@ import (
 	"os/signal"
 	"syscall"
 
+	"github.com/joho/godotenv"
+
 	"github.com/midhat81/fomo-x/services/solana-ingestor/internal/checkpoint"
 	"github.com/midhat81/fomo-x/services/solana-ingestor/internal/config"
 	"github.com/midhat81/fomo-x/services/solana-ingestor/internal/kafka"
@@ -14,6 +16,10 @@ import (
 )
 
 func main() {
+	if err := godotenv.Load(); err != nil {
+		log.Println("no .env file found, relying on system environment variables")
+	}
+
 	cfg := config.Load()
 
 	log.Println("FOMO-X Solana Ingestor starting...")

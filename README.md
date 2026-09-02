@@ -1,4 +1,3 @@
-@"
 # FOMO-X
 
 Production-style event-driven Solana trading infrastructure, built solo over 7 days.
@@ -21,4 +20,3 @@ Production-style event-driven Solana trading infrastructure, built solo over 7 d
 
 ## Status
 Day 1 in progress: Solana ingestion pipeline.
-"@ | Set-Content -Path "README.md" -Encoding utf8

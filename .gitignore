@@ -1,4 +1,3 @@
-@"
 # Node
 node_modules/
 .next/
@@ -30,4 +29,3 @@ Thumbs.db
 
 # Logs
 *.log
-"@ | Set-Content -Path ".gitignore" -Encoding utf8

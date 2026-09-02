@@ -1,4 +1,3 @@
-@"
 .PHONY: up down logs ps clean
 
 up:
@@ -15,4 +14,3 @@ ps:
 
 clean:
 	docker compose down -v
-"@ | Set-Content -Path "Makefile" -Encoding utf8

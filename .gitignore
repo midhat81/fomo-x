@@ -1,0 +1,33 @@
+@"
+# Node
+node_modules/
+.next/
+dist/
+npm-debug.log*
+
+# Go
+bin/
+*.exe
+*.test
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+"@ | Set-Content -Path ".gitignore" -Encoding utf8

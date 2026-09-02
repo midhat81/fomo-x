@@ -1,0 +1,8 @@
+@"
+node_modules
+.next
+dist
+.git
+.env
+*.log
+"@ | Set-Content -Path ".dockerignore" -Encoding utf8
